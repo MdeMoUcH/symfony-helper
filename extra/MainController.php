@@ -4,9 +4,11 @@ namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 
-class MainController extends AbstractController{
+class MainController {//extends AbstractController{
 	public function main(){
 
-		return $this->render('main.html.twig');
+		return new Response('<p><a href="/lucky-number">Número de la suerte</a></p>
+		<p><a href="/test-controller">Fecha</a></p>');
+		//return $this->render('main.html.twig');
 	}
 }

@@ -4,10 +4,11 @@ namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 
-class TestController extends AbstractController{
+class TestController {//extends AbstractController{
 	public function main(){
-		$fecha = date("Y-m-d H:i:s");
+		$fecha = date('Y-m-d H:i:s');
 
-		return $this->render('other.html.twig', ['texto' => 'Fecha: ', 'dato' => $fecha]);
+		return new Response('Fecha: '.$fecha);
+		//return $this->render('other.html.twig', ['texto' => 'Fecha: ', 'dato' => $fecha]);
 	}
 }
