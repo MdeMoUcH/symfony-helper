@@ -4,8 +4,8 @@
 
 
 #Instalación de lamp y los módulos php necesarios:
-sudo apt-get install lamp-server^
-sudo apt-get install php7.2-xml php7.2-intl php7.2-mbstring php7.2-sqlite3
+sudo apt-get install lamp-server^ -y
+sudo apt-get install php7.2-xml php7.2-intl php7.2-mbstring php7.2-sqlite3 -y
 
 
 #Instalación de composer:
@@ -27,6 +27,8 @@ wget https://get.symfony.com/cli/installer -O - | bash
 echo "" >> $HOME/.bashrc
 echo 'export PATH="$HOME/.symfony/bin:$PATH"' >> $HOME/.bashrc
 
-. ../.bashrc
 
-symfony check:requirements
+echo "Symfony instalado! Prueba a escribir lo siguiente para comprobarlo:"
+echo ""
+echo "	. ../.bashrc && symfony check:requirements"
+echo ""
