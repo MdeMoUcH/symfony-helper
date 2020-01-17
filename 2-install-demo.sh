@@ -8,6 +8,9 @@ cd demo
 
 php ../composer.phar install
 
-symfony server:start
+echo "Demo instalada. Puedes iniciar el servidor con el siguiente comando:"
+echo ""
+echo "symfony server:start"
+echo ""
 
 
