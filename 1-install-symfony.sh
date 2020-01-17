@@ -3,8 +3,9 @@
 #Instalación de Symfony con composer.
 
 
-#Instalación del php y los módulos necesarios:
-sudo apt-get install php7.2 php7.2-xml php7.2-intl php7.2-mbstring php7.2-sqlite3
+#Instalación de lamp y los módulos php necesarios:
+sudo apt-get install lamp-server^
+sudo apt-get install php7.2-xml php7.2-intl php7.2-mbstring php7.2-sqlite3
 
 
 #Instalación de composer:
@@ -25,3 +26,7 @@ wget https://get.symfony.com/cli/installer -O - | bash
 #Metemos el path en nuestro bashrc:
 echo "" >> $HOME/.bashrc
 echo 'export PATH="$HOME/.symfony/bin:$PATH"' >> $HOME/.bashrc
+
+. ../.bashrc
+
+symfony check:requirements
